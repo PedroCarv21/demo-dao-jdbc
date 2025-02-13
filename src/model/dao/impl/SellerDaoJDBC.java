@@ -97,7 +97,7 @@ public class SellerDaoJDBC implements SellerDao{
 		PreparedStatement st = null;
 		try {
 			
-			if (this.findBydId(id) == null) {
+			if (this.findById(id) == null) {
 				throw new DbException("No register found with Id = " + id);
 			}
 			else {
@@ -118,7 +118,7 @@ public class SellerDaoJDBC implements SellerDao{
 	}
 
 	@Override
-	public Seller findBydId(Integer id) {
+	public Seller findById(Integer id) {
 		PreparedStatement st = null;
 		ResultSet rs = null;
 		try {
