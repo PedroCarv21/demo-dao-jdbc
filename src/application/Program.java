@@ -48,12 +48,9 @@ public class Program {
 		
 		DepartmentDao dep = DaoFactory.createDepartmentDao();
 		
-//		List<Department> departments = dep.findAll();
-//		departments.forEach(System.out::println);
+		dep.deleteById(7);
 		
-		Department department = dep.findBydId(5);
 		
-		System.out.println(department);
 	}
 
 }
